@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Najihah R. - About Me</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" crossorigin="anonymous" />
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+        <link rel="manifest" href="favicon_io/site.webmanifest">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins&display=swap">
+    </head>
+    <body>
+            <div class="container">
+            <nav id="fixed-header">
+                <a href="index.html"><img src="images/NR-logo.jpg" class="logo" alt="logo"/></a>
+                <ul id="sidemenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <i class="fas fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-ellipsis-vertical" onclick="openmenu()"></i>
+            </nav>
+            </div>
+        
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/passport.JPG" class="passportpic" alt="Nurul Najihah Rahim"/>
+                </div>
+                
+                <div class="about-col-2">
+                    <h1 class="about-me-title">About Me</h1>
+                    <p>Hey there! I'm Nurul Najihah from Kota Bharu, Kelantan, currently a 20-year-old student at Unisza Kampus Besut. I'm diving into the world of computer science, specializing in Internet Computing. Beyond my studies, I'm a tech enthusiast who loves keeping up with the latest trends.I believe in using technology for positive change, and I'm excited to see where my journey in computer science takes me. Join me as I navigate this dynamic and ever-changing digital landscape!</p>
+               
+                    <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab(event, 'skills')">Skills</p>                           
+                    <p class="tab-links" onclick="opentab(event, 'experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab(event, 'education')">Education</p>
+                    </div>
+                    
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span><b>Front-End Development</b></span><br>HTML/CSS, JavaScript, Front-End Frameworks</li>
+                            <li><span><b>Back-End Development</b></span><br>Server-Side Programming Languages,Database Management, APIs (Application Programming Interfaces)</li>
+                            <li><span><b>Web Architecture and Deployment</b></span><br>Familiarity with web servers (e.g., Nginx, Apache) and cloud platforms (e.g., AWS, Azure, Heroku).</li>               
+                        </ul>
+                    </div>
+                    
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span><b>2015</b></span><br>Champion for Netball in MSSD Kota Bharu Netball Competition</li>
+                            <li><span><b>2019</b></span><br>2nd Place for 100m Sprint in MSSD Kota Bharu Sport Competition</li>
+                            <li><span><b>2020</b></span><br>Champion for 100m Sprint in MSSD Kota Bharu Sport Competition</li>
+                            <li><span><b>2022-2023</b></span><br>Dean's List (Semester 1, Semester 2)</li>               
+                        </ul>
+                    </div>
+                    
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span><b>2011 - 2015</b></span><br>SK Long Gafar (UPSR: 5A)</li>
+                            <li><span><b>2016 - 2020</b></span><br>SMK Long Gafar (SPM: 9A)</li>
+                            <li><span><b>2021 - 2022</b></span><br>Asasi Sains dan Perubatan UniSZA (CGPA: 3.37)</li>
+                            <li><span><b>2022 - current</b></span><br>Ijazah Sarjana Muda Sains Komputer (Komputeran Internet) (current CGPA: 3.76)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>Copyright © Najihah R.</p>
+        </div>
+        <script src="script.js"></script>
+
+    </body>
+</html>
